@@ -1,5 +1,6 @@
-lo puse haci porque para mi es mejor
-
+los archivos estan organizados de esta manera para llevar un seguimiento detallado de las actividades que estenmos haciendo 
+es mejor visualizar todas las modificaciones que quiero hacer 
+es practico
 
 
 
