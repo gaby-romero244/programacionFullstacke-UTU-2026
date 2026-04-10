@@ -1,0 +1,7 @@
+7
+
+Detectás correctamente las etiquetas principales como header, main, nav y footer.
+
+Recordá que la mayoría de las páginas web están compuestas por varias sections que se van recorriendo hacia abajo al hacer scroll, y cada una puede tener una estructura interna distinta según su contenido.
+
+Buen trabajo en general, seguí así.
