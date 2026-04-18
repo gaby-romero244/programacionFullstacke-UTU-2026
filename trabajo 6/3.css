@@ -1,0 +1,34 @@
+.navegacion {
+    background-color: rgb(13, 13, 13);
+    top: 0%;
+    display: flex;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    color: aliceblue;
+    
+}
+body {
+    margin: 0;
+}
+.categorias {
+    margin: 50px 0;
+}
+
+.categorias{
+    position: sticky;
+    top: 50px;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.linea {
+    border-top: 2px dashed red;
+    margin: 20px 0;
+}
+.contenido { 
+    padding: 10px;
+
+}
