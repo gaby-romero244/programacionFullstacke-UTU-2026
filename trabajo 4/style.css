@@ -1,301 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&family=Nanum+Myeongjo:wght@400;700&display=swap');
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-    --sick-bg: #f0ede6;
-    --sick-accent: #c9a96e;
-    --korean-bg: #1a0a2e;
-    --korean-accent: #ff6b9d;
-    --korean-gold: #ffd700;
-    --horror-bg: #0d0d0d;
-    --horror-red: #8b0000;
-    --horror-accent: #cc0000;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-}
+
 
 
 header {
-    background: linear-gradient(135deg, #2c1654 0%, #6b2d8b 50%, #2c1654 100%);
-    color: #fff;
+    background-color: #1f8d44;
+    color: rgb(6, 6, 6);
+    padding: 2.5rem ;
     text-align: center;
-    padding: 3rem 1rem;
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    letter-spacing: 0.05em;
-    position: relative;
-    overflow: hidden;
+    font-size: 2.2rem;
 }
-header::before {
-    display: block;
-    font-size: 1rem;
-    letter-spacing: 1rem;
-    color: #d4a0ff;
-    margin-bottom: 0.5rem;
-}
-header::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 50% 0%, rgba(200,130,255,0.3) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-
-#primera {
-    background: var(--sick-bg);
-    padding: 4rem 2rem;
-    position: relative;
-    overflow: hidden;
-}
-#primera::before {
-    content: '';
-    position: absolute;
-    top: -60px; right: -60px;
-    width: 300px; height: 300px;
-    background: radial-gradient(circle, #f5d9a0 0%, transparent 70%);
-    border-radius: 50%;
-}
-#primera::after {
-    position: absolute;
-    top: 1.5rem; right: 2rem;
-    font-size: 3rem;
-    opacity: 0.4;
-}
-#primera .section-inner {
-    max-width: 800px;
-    margin: 0 auto;
-}
-#primera h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    color: #5a3e1b;
-    border-left: 5px solid var(--sick-accent);
-    padding-left: 1rem;
-    margin-bottom: 1.5rem;
-}
-#primera p {
-    color: #6b5540;
-    line-height: 1.9;
-    font-size: 1.05rem;
-    margin-bottom: 1.5rem;
-    background: rgba(255,255,255,0.6);
-    border-radius: 12px;
-    padding: 1rem 1.4rem;
-    border: 1px solid #e8d5b0;
-}
-#primera img {
-    display: block;
-    max-width: 100%;
-    width: 500px;
-    margin: 2rem auto;
-    border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(90,62,27,0.2);
-    border: 4px solid #e8d5b0;
-}
-.tag-sick {
-    display: inline-block;
-    background: #c9a96e;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 0.3rem 0.9rem;
-    border-radius: 20px;
-    margin-bottom: 1rem;
-}
-
-#segunda {
-    background: var(--korean-bg);
-    padding: 4rem 2rem;
-    position: relative;
-    overflow: hidden;
-}
-#segunda::before {
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(ellipse at 10% 50%, rgba(255,107,157,0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 90% 20%, rgba(147,51,234,0.2) 0%, transparent 50%);
-    pointer-events: none;
-}
-.petal {
-    position: absolute;
-    font-size: 1.2rem;
-    opacity: 0.3;
-    animation: fall linear infinite;
-}
-@keyframes fall {
-    0%   { transform: translateY(-20px) rotate(0deg); opacity: 0; }
-    10%  { opacity: 0.3; }
-    90%  { opacity: 0.3; }
-    100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
-}
-#segunda .section-inner {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-#segunda h1 {
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: clamp(1.4rem, 3.5vw, 2rem);
-    color: var(--korean-accent);
-    text-align: center;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 30px rgba(255,107,157,0.5);
-    letter-spacing: 0.03em;
-}
-#segunda ol {
-    list-style: none;
-    counter-reset: kdrama;
-}
-#segunda ol li {
-    counter-increment: kdrama;
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,107,157,0.2);
-    border-radius: 12px;
-    padding: 1rem 1.5rem;
-    margin-bottom: 0.9rem;
-    color: #f0d0e0;
-    font-size: 1.05rem;
-    transition: transform 0.2s, border-color 0.2s;
-}
-#segunda ol li:hover {
-    transform: translateX(6px);
-    border-color: var(--korean-accent);
-}
-#segunda ol li::before {
-    content: counter(kdrama, decimal-leading-zero);
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: var(--korean-accent);
-    min-width: 2.5rem;
-}
-.tag-korean {
-    display: block;
-    text-align: center;
-    color: #d4a0ff;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-
-#tercera {
-    background: var(--horror-bg);
-    padding: 4rem 2rem;
-    position: relative;
-    overflow: hidden;
-}
-#tercera::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 6px;
-    background: var(--horror-accent);
-    box-shadow: 0 0 20px var(--horror-accent);
-}
-#tercera::after {
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 2px,
-        rgba(0,0,0,0.1) 2px,
-        rgba(0,0,0,0.1) 4px
-    );
-    pointer-events: none;
-}
-#tercera .section-inner {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-#tercera h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.4rem, 3.5vw, 2rem);
-    color: var(--horror-accent);
-    text-align: center;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 20px rgba(204,0,0,0.7), 0 0 60px rgba(204,0,0,0.3);
-    animation: flicker 4s infinite;
-}
-@keyframes flicker {
-    0%,96%,98%,100% { opacity: 1; }
-    97%             { opacity: 0.4; }
-    99%             { opacity: 0.85; }
-}
-#tercera ol {
-    list-style: none;
-    counter-reset: horror;
-}
-#tercera ol li {
-    counter-increment: horror;
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    background: rgba(139,0,0,0.08);
-    border: 1px solid rgba(204,0,0,0.25);
-    border-left: 4px solid var(--horror-accent);
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    margin-bottom: 0.9rem;
-    color: #c9b8b8;
-    font-size: 1.05rem;
-    transition: background 0.2s;
-}
-#tercera ol li:hover {
-    background: rgba(139,0,0,0.2);
-    color: #fff;
-}
-#tercera ol li::before {
-    font-size: 1.3rem;
-    min-width: 2rem;
-}
-#tercera ol li::after {
-    content: counter(horror);
-    margin-left: auto;
-    font-weight: 700;
-    color: rgba(204,0,0,0.5);
-    font-size: 1.2rem;
-}
-.tag-horror {
-    display: block;
-    text-align: center;
-    color: #660000;
-    font-size: 0.75rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-
-footer {
-    background: #111;
-    color: #555;
-    text-align: center;
+section {
+    justify-content: center;
     padding: 2rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    border-top: 1px solid #222;
 }
-footer::before { content: '— '; }
-footer::after  { content: ' —'; }
+section h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Cinzel', serif;
+}
+section p{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    margin-bottom: 1rem;
+}   
+#primera{
+    background-color: #bff0d8;
+    color: rgb(6, 6, 6);
+    padding: 2rem;
+    display: inline-block;
+}
+#primera p{
+    font-size: 1.2rem;
+    color: rgb(149, 9, 119);
+}
+#primera img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-color: rgb(2, 2, 80);
+}
+#segunda{
+    background-color: #e7d5e5;
+    color: rgb(6, 6, 6);
+    padding: 2rem;
+    display: block;
+    align-items: center;
+}
+#tercera{
+    background-color: #a9b09f;
+    color: rgb(6, 6, 6);
+    padding: 2rem;
+    display: block;
+    align-items: center;
+    
+}
 
-@media (max-width: 600px) {
-    #primera, #segunda, #tercera { padding: 2.5rem 1.2rem; }
+
+
+ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+li {
+   background: #e2a8db;
+   border: 0.5px solid #620446;
+   border-radius: 12px;
+   padding: 1.1rem 1.4rem;
+   font-size: 15px;
+   font-weight: 500;
+   color: #9f1434;
+   letter-spacing: 0.03rem;
+}
+ li:hover {
+    background: #dd9fca;
+   border-color: #e65bbc;
+
+
+
+footer{
+    background-color: #1f8d44;
+    color: rgb(6, 6, 6);
+    padding: 1rem ;
+    text-align: center;
 }
