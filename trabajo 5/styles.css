@@ -109,3 +109,6 @@ body {
 .stat-item.destacado .stat-label {
     color: #f5c0cd;
 }
+        .contenedor {
+            display: flex;
+            gap: 20px;

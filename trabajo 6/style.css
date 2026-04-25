@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+div{
+
+    background-color: rgb(51, 173, 3);
+    margin:  5px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.boton-verde{
+    background-color: rgb(51, 173, 3);
+    color:white;
+    position: relative;
+}
+
+.boton-amarillo{
+    background-color: rgb(255, 255, 0);
+    color:black;
+    position: relative;
+}
+
+.boton-rojo{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    position: relative;
+}
+
+
+span{
+   position: absolute;
+   top: 0px; 
+
+}
+
