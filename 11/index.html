@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="11.css">
+</head>
+<body>
+
+<h1>Lista de Tareas</h1>
+
+<form id="formulario">
+    <input type="text" id="tareaInput" placeholder="Escribe una tarea">
+    <button type="submit">Agregar</button>
+</form>
+
+<p id="error" class="error"></p>
+
+<div>
+    <p>Total: <span id="total">0</span></p>
+    <p>Completadas: <span id="completadas">0</span></p>
+    <p>Pendientes: <span id="pendientes">0</span></p>
+</div>
+
+<button id="borrarTodo">Borrar todas</button>
+
+<ul id="lista"></ul>
+
+<script src="11.js"></script>
+</body>
+</html>
