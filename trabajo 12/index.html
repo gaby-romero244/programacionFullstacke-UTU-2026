@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Colección</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Colección</h1>
+        <p><span id="counter">0</span> elementos</p>
+    </header>
+
+    <section>
+        <h2>Biblioteca de favoritos</h2>
+        <p> Películas · Series</p>
+    </section>
+
+    <section>
+        <h2>Agregar Elemento</h2>
+
+        <input type="text" id="f-name" placeholder="Nombre">
+
+        <input type="text" id="f-desc" placeholder="Descripción">
+
+        <select id="f-type">
+            <option value="">Tipo</option>
+            <option>Videojuego</option>
+            <option>Película</option>
+            <option>Serie</option>
+            <option>Otro</option>
+        </select>
+
+        <select id="f-status">
+            <option value="">Estado</option>
+            <option>Pendiente</option>
+            <option>En progreso</option>
+            <option>Terminado</option>
+        </select>
+
+        <input type="url" id="f-img" placeholder="URL de imagen">
+
+        <button id="add-btn">Agregar</button>
+    </section>
+
+    <section>
+        <button data-filter-type="all">Todos</button>
+        <button data-filter-type="Videojuego">Juegos</button>
+        <button data-filter-type="Película">Películas</button>
+        <button data-filter-type="Serie">Series</button>
+    </section>
+
+    <main id="collection-grid">
+        <p>Esta es la colección.</p>
+    </main>
+
+    <script src="dom.js"></script>
+
+</body>
+</html>
