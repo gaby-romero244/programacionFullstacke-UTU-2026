@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 7
+=======
+7, te olvidaste de conectar el script
+>>>>>>> 946e20ed81b159c97a1dfaa8b4d42f9f6c773fbb
