@@ -1,0 +1,13 @@
+<?php
+
+$rol = "administrador";
+if ($rol == "administrador") {
+    echo "Bienvenido, $rol";
+} elseif ($rol == "editor") {
+    echo "Bienvenido, $rol";
+} elseif ($rol == "suscriptor") {
+    echo "Bienvenido, $rol";
+} else {
+    echo "Rol no reconocido.";
+}   
+?>

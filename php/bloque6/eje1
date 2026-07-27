@@ -1,0 +1,11 @@
+<?php
+
+$edad = 10;
+$precio = 500;
+
+if ($edad >= 12) {
+    $precio = $precio * 0.5; // Aplica un descuento del 20%
+}
+ 
+echo "El precio de la entrada es: $precio";
+?>

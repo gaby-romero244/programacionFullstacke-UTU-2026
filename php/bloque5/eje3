@@ -1,0 +1,18 @@
+<?php
+
+$precio = 100;
+$presupuesto = 500;
+$stock = 10;
+$cantidadsolicitada = 3;
+$totaldelacompra = $precio * $cantidadsolicitada;
+
+if ($stock >= $cantidadsolicitada && $totaldelacompra <= $presupuesto) {
+    echo "Compra realizada con éxito. Total: $totaldelacompra";
+} elseif ($stock < $cantidadsolicitada) {
+    echo "No hay suficiente stock disponible.";
+} elseif ($totaldelacompra > $presupuesto) {
+    echo "No tienes suficiente presupuesto para realizar la compra.";
+} else {
+    echo "No se puede realizar la compra.";
+}
+?>

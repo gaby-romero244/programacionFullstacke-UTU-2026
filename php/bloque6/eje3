@@ -1,0 +1,21 @@
+<?php
+
+$totaldecompra = 3500;
+$decuento = 0;
+
+if ($totaldecompra < 1000) {
+$descuento = 0;
+} 
+elseif ($totaldecompra >= 1000 && $totaldecompra < 5000) {
+    $descuento = $totaldecompra * 0.10;
+}
+else {
+    $descuento = $totaldecompra * 0.20;
+}
+
+$totalfinal = $totaldecompra - $descuento;
+
+echo "El total final a pagar es: $totalfinal";
+echo "El descuento aplicado es: $descuento";
+echo "El total de la compra es: $totaldecompra";
+?>

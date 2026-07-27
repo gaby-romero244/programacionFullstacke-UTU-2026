@@ -1,0 +1,15 @@
+<?php
+
+$preciounitario = 100;
+$cantidaddecompra = 6;
+$subtotal = $preciounitario * $cantidaddecompra;    
+$descuento = 0;
+
+if ($preciounitario >= 5) {
+    $descuento = $subtotal * 0.10;
+}
+$totalfinal = $subtotal - $descuento;
+echo "El total final a pagar es: $totalfinal";
+echo "el subtotal es: $subtotal";
+echo "el descuento es: $descuento";
+?>

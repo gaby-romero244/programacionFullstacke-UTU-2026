@@ -1,0 +1,10 @@
+<?php
+
+$edad = 16;
+$tienentrada = true;
+$acompanadodeunadulto =true;
+ if ($edad >= 18 || $tienentrada || $acompanadodeunadulto) {
+    echo "Puede ingresar al evento.";
+    } else {
+    echo "No puede ingresar al evento.";}
+    ?>

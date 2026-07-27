@@ -1,0 +1,19 @@
+<?php
+
+$producto = "teclado";
+$precio = 500;
+$stock = 20;
+$cantidad = 12;
+
+if ($stock >= $cantidad) {
+    $total = $precio * $cantidad;
+
+    if( $cantidad >= 10) {
+        $total = $total * 0.9;
+    }
+
+    echo "Compra realizada con éxito. Total: $total";
+} else {
+    echo "No hay suficiente stock disponible.";
+}
+?>
