@@ -1,0 +1,9 @@
+<?php
+$punto = 60;
+
+if ($punto >= 50) {
+    echo "Aprobado";
+} else {
+    echo "Desaprobado";
+}
+?>
