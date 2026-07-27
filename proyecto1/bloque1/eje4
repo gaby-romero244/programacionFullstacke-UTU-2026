@@ -1,0 +1,8 @@
+<?php
+
+$nombre = "toto";
+$curso = "informatica";
+$materia = "programacion";
+
+echo "Hola, mi nombre es $nombre, estoy cursando $curso y la materia que me gusta es $materia.";
+

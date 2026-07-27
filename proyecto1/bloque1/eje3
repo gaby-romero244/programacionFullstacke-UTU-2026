@@ -1,0 +1,10 @@
+<?php
+
+$nombrejugador = "pepe";
+$nombrepersonaje = "legendario";
+$nivel = 80;
+$servidor = "freefire";
+echo "El jugador $nombrejugador tiene un personaje $nombrepersonaje de nivel $nivel en el servidor $servidor.";
+
+
+?>

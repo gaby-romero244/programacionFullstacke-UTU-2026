@@ -1,0 +1,13 @@
+<?php
+
+$num1 = 120;
+$num2 = 30;
+$suma = $num1 + $num2;
+$resta = $num1 - $num2;
+$multiplicacion = $num1 * $num2;
+$division = $num1 / $num2;
+echo "La suma de $num1 y $num2 es: $suma";
+echo "La resta de $num1 y $num2 es: $resta";
+echo "La multiplicación de $num1 y $num2 es: $multiplicacion";
+echo "La división de $num1 y $num2 es: $division";
+?>

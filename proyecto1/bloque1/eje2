@@ -1,0 +1,8 @@
+<?php
+
+$nombreproducto = "teclado";
+$precio = 1200;
+$stock = 5;
+
+echo "El producto es un $nombreproducto, su precio es de $precio y hay $stock unidades disponibles.";
+?>

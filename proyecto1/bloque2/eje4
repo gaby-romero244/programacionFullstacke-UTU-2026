@@ -1,0 +1,7 @@
+<?php
+
+$minutos = 135;
+$horas = $minutos / 60;
+$resto = $minutos % 60;
+echo "$minutos minutos son $horas horas y $resto minutos.";
+?>

@@ -1,0 +1,10 @@
+<?php
+
+$num = 10;
+$texto = "10";
+if ($num === $texto) {
+    echo "El número y el texto son idénticos.";
+} else {
+    echo "El número y el texto no son idénticos.";
+}   
+?>
